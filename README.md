@@ -1,4 +1,6 @@
+##
 1.Create a folder named fast, put all fastq files under this folder (or create soft links to fastq files)
+##
 2. Prepare a CSV file as follows:
 "
 sample.raw.data.id,sample.barcode
@@ -13,4 +15,5 @@ T546908,CLM-546908-T-03
 sample.raw.data.id: the sample name submitted to sequencing facility. Usually, the name of fastq files for the sample starts with this.
 sample.barcode:     the sample barcode we would like to use in the downstream analysis. Usually, the sample.raw.data.id is pretty arbitrary and not self-descriptive. This provides us an opportunity to re-name the sample
 
+##
 3. Rscript sc.rna.seq.pipeline.R CSV_file_name
